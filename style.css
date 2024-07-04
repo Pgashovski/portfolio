@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+.HelloHeading{
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nameHeading{
+  font-family: "League Spartan", sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.DevHeading{
+  font-family: "League Spartan", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+.bsb-hero-2 {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.Accomplishments {
+  background-color: #f8f9fa;
+  position: sticky;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+.quote {
+  font-style: italic;
+}
+
+/*CARD*/
+
+.card {
+  position: relative;
+  width: 254px;
+  height: 254px;
+  background: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card2 {
+  position: relative;
+  width: 500px;
+  height: 254px;
+  background: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 50px auto 50px auto;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 264px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #703e78 0%, #ddb3e4 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 510px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #703e78 0%, #ddb3e4 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #703e78 0%, #ddb3e4 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.card2::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #703e78 0%, #ddb3e4 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.card:hover::after {
+  filter: blur(30px);
+}
+
+.card:hover::before {
+  transform: rotate(-90deg) scaleX(1.1) scaleY(0.77);
+}
+
+.card2:hover::after {
+  filter: blur(30px);
+}
+
+.card2:hover::before {
+    transform: rotate(-90deg) scaleX(0.60) scaleY(0.77);
+}
+
+/*CARD*/
+
+
+/*testimonials*/
+
+
+/*testimonials*/
+
